@@ -3,11 +3,11 @@
 // See http://mongoosejs.com/docs/models.html
 // for more of what you can do here.
 module.exports = function (app) {
-  const modelName = 'workTag';
+  const modelName = 'worksTag';
   const mongooseClient = app.get('mongooseClient');
   const { Schema } = mongooseClient;
   const schema = new Schema({
-    name: { type: String, required: true },
+    name: { type: String, required: true, unique: true },
     count: { type: Number, default: 0}
   }, {
     timestamps: true

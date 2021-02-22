@@ -28,7 +28,8 @@
     "lint": "eslint src/. test/. --config .eslintrc.json --fix",
     "dev": "nodemon src/",
     "start": "node src/",
-    "mocha": "mocha test/ --recursive --exit"
+    "mocha": "mocha test/ --recursive --exit",
+    "post": "node ./client/post.js"
   },
   "standard": {
     "env": [
@@ -44,6 +45,7 @@
     "@feathersjs/errors": "^4.5.11",
     "@feathersjs/express": "^4.5.11",
     "@feathersjs/feathers": "^4.5.11",
+    "@feathersjs/rest-client": "^4.5.11",
     "@feathersjs/socketio": "^4.5.11",
     "@feathersjs/transport-commons": "^4.5.11",
     "compression": "^1.7.4",
@@ -52,7 +54,9 @@
     "helmet": "^4.4.1",
     "mongodb-core": "^3.2.7",
     "mongoose": "^5.11.17",
+    "node-fetch": "^2.6.1",
     "serve-favicon": "^2.5.0",
+    "shelljs": "^0.8.4",
     "winston": "^3.3.3"
   },
   "devDependencies": {

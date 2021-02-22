@@ -1,7 +1,7 @@
 // Initializes the `work-tag` service on path `/work-tag`
-const { WorkTag } = require('./work-tag.class');
-const createModel = require('../../models/work-tag.model');
-const hooks = require('./work-tag.hooks');
+const { WorksTag } = require('./works-tag.class');
+const createModel = require('../../models/works-tag.model');
+const hooks = require('./works-tag.hooks');
 
 module.exports = function (app) {
   const options = {
@@ -10,10 +10,10 @@ module.exports = function (app) {
   };
 
   // Initialize our service with any options it requires
-  app.use('/work-tag', new WorkTag(options, app));
+  app.use('/works-tag', new WorksTag(options, app));
 
   // Get our initialized service so that we can register hooks
-  const service = app.service('work-tag');
+  const service = app.service('works-tag');
 
   service.hooks(hooks);
 };
