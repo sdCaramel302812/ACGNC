@@ -9,6 +9,7 @@ module.exports = function (app) {
   const schema = new Schema({
     title: { type: String, required: true, unique: true },
     tags: [String],
+    media: [String],
     rate: Number,
     intro: String
   }, {

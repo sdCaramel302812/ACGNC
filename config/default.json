@@ -9,7 +9,7 @@
   "authentication": {
     "entity": "user",
     "service": "user",
-    "secret": "OUlpQQQW8aTdGCkQltAXFm8yLi4=",
+    "secret": "",
     "authStrategies": [
       "jwt",
       "local"
@@ -37,6 +37,10 @@
           "profile",
           "openid"
         ]
+      },
+      "github": {
+        "key": "1a071af1b32a01e80f00",
+        "secret": "<Client Secret>"
       }
     }
   },
